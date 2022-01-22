@@ -2,8 +2,6 @@
 
 **Senior Full Stack Developer**
 
-* (+84) 936 225 551
-* [nhvu1988@gmail.com](mailto:nhvu1988@gmail.com)
 * [nhvu1988.com](https://nhvu1988.com)
 * [linkedin.com/in/nhvu1988](https://www.linkedin.com/in/nhvu1988/)
 
