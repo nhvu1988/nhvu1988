@@ -1,46 +1,39 @@
-# Chirpy Starter [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)](https://rubygems.org/gems/jekyll-theme-chirpy) [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+# Nguyen Hoang Vu
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders `_includes`, `_layout`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file from the theme's gem. If you have ever installed this theme gem, you can use the command `bundle info --path jekyll-theme-chirpy` to locate these files.
+**Senior Full Stack Developer**
 
-The Jekyll organization claims that this is to leave the ball in the user’s court, but this also results in users not being able to enjoy the out-of-the-box experience when using feature-rich themes.
+* (+84) 936 225 551
+* [nhvu1988@gmail.com](mailto:nhvu1988@gmail.com)
+* [nhvu1988.com](https://nhvu1988.com)
+* [linkedin.com/in/nhvu1988](https://www.linkedin.com/in/nhvu1988/)
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your Jekyll site. The following is a list of targets:
+## About me
 
-```shell
-.
-├── _config.yml
-├── _data
-├── _plugins
-├── _tabs
-└── index.html
-```
+* I'm currently working as **Senior Software Engineer** at [Noria](https://noria.no). My daily job is contacting directly to the customer, discuss the solution and **solve the problem**.
+* During **more than ten years** working in the software industry, I have experienced in any kind of projects, in many languages (PHP, NodeJS, VB, .NET...), cloud platforms (Heroku, AWS, Azure...), web and desktop application, open-source and enterprise software. 
+* I have **strong experience in .NET** world and now on planning to get the [Azure certificates](https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/).
+* I work in any role in every software development process. Question, discuss with the customer to get the domain, investigate the issue, and negotiate for a solution are my daily tasks. Design mockup and build good UX is my most concerning since I always put me in a user of the developing software.
 
-In order to save your time, and to prevent you from missing some files when copying, we extract those files/configurations of the latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+  > **I love coding and learning new things!**
+* I can work anytime, anywhere and whenever I have a chance, I always think about the codes. How to make it better? How to solve the having issue? What should I learn to get the best solution? These questions are always in my mind from the morning to the night, even on the weekend!
 
-## Prerequisites
+## Certificates
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll` and `Bundler`.
+* [AZ-900 - Microsoft Azure Fundamentals](https://nhvu1988.com/assets/pdfs/AZ-900-NHV.pdf)
+* [Microsoft - MCSA Web Applications](https://www.youracclaim.com/badges/f4af1d7a-3b38-4b19-9bca-3762399e4d80/linked_in_profile)
+* [Azure - MCSA Web Applications](https://www.youracclaim.com/badges/f4af1d7a-3b38-4b19-9bca-3762399e4d80/linked_in_profile)
 
-## Installation
+## Skills
 
-[**Use this template**][use-template] to generate a brand new repository and name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
-
-Then clone it to your local machine and run:
-
-```
-$ bundle
-```
-
-## Usage
-
-Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+* Programming Languages: **.NET**, **NodeJS**, PHP, VB.
+* Frameworks: **ASP.NET Web APIs**, ASP.NET MVC, **.NET Core**, .NET Framework, Entity Framework, Entity Framework Core, ExpressJS, Ext.NET, **MEAN stack**.
+* Front-end: **AngularJS**, Vue, **Angular 6+**, React, **Bootstrap 3/4**, Angular Material.
+* Databases: **SQL Server**, Cosmos DB, **Mongo DB**, MySQL, PostgreSQL.
+* Testing: **unit test**, integration testing.
+* Operating System: Windows, MacOS, Linux.
+* Cloud Services: **Azure Services**, AWS, Heroku.
+* DevOps: **Azure DevOps**, Heroku CI, **Docker**.
+* Methodologies: Scrum, **Agile**, **Gitflow**.
+* Software Architectures: Onion Architecture, Multi-tenancy Architecture, **Microservices Architecture**.
+* Others: DDD, CQRS, Event Sourcing, Bot Framework, Azure Data Lake, etc.
+* Knowledges: **OOP**, **SEO**, CDN, **RESTful API**, Azure IoT, Google Analytics, Identity Server 4.
