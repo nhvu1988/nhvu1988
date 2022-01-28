@@ -6,20 +6,32 @@ category: DevOps
 tags: [azure, cloudflare]
 ---
 
-While deploying my application to Azure Web App, I would like to use the [Cloudflare Access](https://www.cloudflare.com/teams/access/) to protect my web application. There're 3 steps we need to be done.
+While deploying my application to Azure Web App, I would like to use the [Cloudflare Access](https://www.cloudflare.com/teams/access/) to protect my web application. So that only me can use the web application.
 
-1. Add custom domain for Azure Web App.
-2. Enable the proxy mode for the DNS on cloudflare.
-3. Restrict all the traffic to the Azure Web App to be allowed from Cloudflare only.
+But the problem is the Azure Web App always assign a custom domain to the web app so it could be scanned and accessed in public if anyone knows that domain. How we can prevent that?
 
-## 1. Add custom domain for Azure Web App
+    It could be resolved if we can restrict the access to the app from everywhere but the Cloudflare Access.
+
+There're 4 steps we need to be done.
+
+1. Configure the Cloudflare Access to deny user.
+2. Add custom domain for Azure Web App.
+3. Enable the proxy mode for the DNS on cloudflare.
+4. Restrict all the traffic to the Azure Web App to be allowed from Cloudflare only.
+
+## 1. Configure the Cloudflare Access to deny user
+
+Go to [Cloudflare Access](https://dash.teams.cloudflare.com/) and add an application with policy to deny all users (except mine :D)
+
+![](/assets/img/posts/2022-01-28-18-17-46.png)
+
+## 2. Add custom domain for Azure Web App
 
 Ensure that the custom domain has been added and configured on Azure Web App...
 
 ![](/assets/img/posts/2022-01-28-17-19-50.png)
 
-
-## 2. Enable proxy mode for Cloudflare DNS
+## 3. Enable proxy mode for Cloudflare DNS
 
 ...and Cloudflare as well, but remember to **enable proxy mode** for it. So now all the traffic to Azure Web App will be proxied to Cloudflare.
 
@@ -27,7 +39,7 @@ Ensure that the custom domain has been added and configured on Azure Web App...
 
 But because the Azure automatically assign to Web App a custom domain likes `webapp-name.azurewebservices.net` so the user may know it and can access to your application directly using that domain. So go to step 3 to prevent that.
 
-## 3. Restrict all the traffic to the Azure Web App
+## 4. Restrict all the traffic to the Azure Web App
 
 Go to Networking - Access restriction
 
