@@ -16,3 +16,4 @@ Continue to a (very long) previous [post](/posts/azure-devops-what-i-have-done),
 5. How to deploy a docker-based web app to azure app service using azure files as volume?
 6. How to add custom domain for app service and serve it with HTTPS without SSL installation or using lets enscrypt?
 7. How to deploy [code-server](https://github.com/linuxserver/docker-code-server) to azure app service and start coding on browser?
+8. How to configure a created Web App for Containers to use the new image?
