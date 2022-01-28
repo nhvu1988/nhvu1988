@@ -6,22 +6,22 @@ category: DevOps
 tags: [azure, cloudflare]
 ---
 
-While deploying my application to Azure Web App, I would like to use the [Cloudflare Access](https://www.cloudflare.com/teams/access/) to protect my web application. So that only me can use the web application.
+While deploying my application to Azure Web App, I would like to use the [Cloudflare Access](https://www.cloudflare.com/teams/access/) to protect my web application. So that only I can use the web application.
 
-But the problem is the Azure Web App always assign a custom domain to the web app so it could be scanned and accessed in public if anyone knows that domain. How we can prevent that?
+But the problem is the Azure Web App always assigns a custom domain to the web app (ex `webapp-name.azurewebservices.net`) so it could be scanned and accessed in public if anyone knows that domain. How we can prevent that?
 
-    It could be resolved if we can restrict the access to the app from everywhere but the Cloudflare Access.
+    It could be resolved if we can restrict access to the app from everywhere but Cloudflare Access.
 
 There're 4 steps we need to be done.
 
-1. Configure the Cloudflare Access to deny user.
+1. Configure the Cloudflare Access to deny all.
 2. Add custom domain for Azure Web App.
 3. Enable the proxy mode for the DNS on cloudflare.
 4. Restrict all the traffic to the Azure Web App to be allowed from Cloudflare only.
 
 ## 1. Configure the Cloudflare Access to deny user
 
-Go to [Cloudflare Access](https://dash.teams.cloudflare.com/) and add an application with policy to deny all users (except mine :D)
+Go to [Cloudflare Access](https://dash.teams.cloudflare.com/) and add an application with a policy to deny all users (except mine :D)
 
 ![](/assets/img/posts/2022-01-28-18-17-46.png)
 
@@ -37,8 +37,6 @@ Ensure that the custom domain has been added and configured on Azure Web App...
 
 ![](/assets/img/posts/2022-01-28-17-24-02.png)
 
-But because the Azure automatically assign to Web App a custom domain likes `webapp-name.azurewebservices.net` so the user may know it and can access to your application directly using that domain. So go to step 3 to prevent that.
-
 ## 4. Restrict all the traffic to the Azure Web App
 
 Go to `Networking` - `Access restriction`
@@ -53,7 +51,7 @@ But the issue is Azure Portal does not allow to add more than one IP range so yo
 
 ![](/assets/img/posts/2022-01-28-17-47-57.png)
 
-So you need to run the powershell scripts to add there IP Ranges directly on the Azure Portal Cloud Shell. Click on the Cloud Shell icon on the top-right of portal, change the command promt to PowerShell
+So you need to run the powershell scripts to add those IP Ranges directly on the Azure Portal Cloud Shell. Click on the Cloud Shell icon on the top-right of the portal, change the command prompt to PowerShell
 
 ![](/assets/img/posts/2022-01-28-17-55-21.png)
 
