@@ -41,7 +41,7 @@ But because the Azure automatically assign to Web App a custom domain likes `web
 
 ## 4. Restrict all the traffic to the Azure Web App
 
-Go to Networking - Access restriction
+Go to `Networking` - `Access restriction`
 
 ![](/assets/img/posts/2022-01-28-17-40-07.png)
 
@@ -67,6 +67,6 @@ Add-AzWebAppAccessRestrictionRule -ResourceGroupName "resource-group-name" -WebA
 
 We need to slit them to 2 rules because of this error.
 
-```console
+```bash
 Add-AzWebAppAccessRestrictionRule: Cannot validate argument on parameter 'IpAddress'. Only 8 ip addresses are allowed per rule
 ```
