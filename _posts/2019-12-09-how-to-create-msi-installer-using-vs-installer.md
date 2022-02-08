@@ -79,7 +79,7 @@ This is the final custom dialog in installation process.
 
 Since the Visual Studio Installer only helps with the custom dialogs or custom actions during installation. We have to create a custom action (library) project to make a simple code to get the user input and update the **App.config**.
 
-In **Visual Studio** -> **File** -> **New Project** -> **Class Library**
+In **Visual Studio** -> **File** -> **New Project** -> **Class Library (.NET Framework)**
 
 ![](/assets/img/posts/2019-12-14_11-47-40.png)
 
